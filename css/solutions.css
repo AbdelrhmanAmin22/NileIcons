@@ -1,0 +1,538 @@
+*{
+    scroll-behavior: smooth;
+}
+#toUp {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-direction: column;
+    background-color: #021248;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+header {
+    background-color:    #cfd1d2;
+    padding: 10px 0;
+    height: 9vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ff6700;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    width: 120px;
+    height: 40px;
+}
+header a {
+    font-size: 20px;
+    color: #021248;
+    transition: all 0.5s ease-in-out;
+}
+header a:hover {
+    color: rgb(255, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+main {
+    min-height: 91vh;
+    margin-top: 9vh;
+    background: url('../images/NI.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .box {
+    border-radius: 5px;
+    background-color: #cfd1d28d;
+    text-align: center;
+    max-width: 700px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Ni {
+    padding: 50px 0;
+}
+.Ni h3 {
+    font-size: 32px;
+    color: #021248;
+    font-weight: 700;
+}
+.Ni h3 span {
+    color: #ff6700;;
+}
+.Ni .boxes {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.Ni .boxes .box {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.121);
+    transition: all 0.5s ease-in-out;
+}
+.Ni .boxes .box:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+.Ni .boxes .box .top {
+    background-color: #cfd1d2;
+    padding: 20px 20px;
+    text-align: center;
+}
+.Ni .boxes .box ul {
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+footer {
+    background-color: #8e8e8e;
+    padding: 20px 0;
+    text-align: center;
+}
+footer a {
+    color: #000;
+    font-weight: 600;
+}
+/* \s */
+#s {
+    background: url('../images/s.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#s .box {
+    background-color: #ffffffab;
+}
+#simg {
+    max-width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+.datacenter img {
+    max-width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+/* c */
+#c {
+    background: url('../images/control.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#c .box {
+    background-color: #ffffffc9;
+}
+
+/* Base styles for special container */
+.firstC .special-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.firstC .special-container .left {
+    width: 47%;
+    height: 100%;
+}
+
+.firstC .special-container .right {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.firstC .special-container .right .two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.firstC .special-container .right .two img {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    animation: skewAnimation 10s ease-in-out infinite; 
+}
+
+
+@keyframes skewAnimation {
+    0% {
+        transform: skew(0deg); 
+    }
+    25% {
+        transform: skew(-20deg);
+    }
+    50% {
+        transform: skew(20deg); 
+    }
+    75% {
+        transform: skew(-20deg); 
+    }
+    100% {
+        transform: skew(0deg); 
+    }
+}
+
+@media (max-width: 1500px) {
+    .firstC .special-container .left,
+    .firstC .special-container .right {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 850px) {
+    .firstC .special-container .right .two img {
+        width: 180px; 
+    }
+}
+
+.firstC  .myContainer {
+    margin-top: 80px;
+}
+.firstC  .myContainer {
+    text-align: center;
+}
+.firstC  h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.firstC  .myContainer .box {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 500px;
+}
+.firstC  .myContainer .headCircle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff6600;
+    color: #021248;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secoundC  .top {
+    padding: 50px 25px;
+    display: flex;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/soultions/mtop1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.secoundC  .top .box {
+    text-align: center;
+    background-color: #ffffffb1;
+    color: #000;
+    max-width: 600px;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+.secoundC .bottom {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+.secoundC .bottom .box {
+    max-width: 400px;
+    min-height: 420px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px #00000053;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    font-size: 16px;
+}
+
+.secoundC .bottom .box .head {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ff6600;
+    color: #021248;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secoundC .bottom .box .head span {
+    color: #ff6600;
+}
+.thirdC .myContainer {
+    margin: 50px 0;
+}
+.thirdC .myContainer:nth-child(1){
+    border-bottom: 2px solid #021248;
+    padding-bottom: 50px;
+}
+
+.thirdC .myContainer img {
+    border-radius: 20px;
+}
+.thirdC .myContainer p {
+    max-width: 600px;
+}
+
+.fourth .container,
+.fifth .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.fourth .container .box,
+.fifth  .container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 550px;
+    min-height: 650px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px #00000053;
+}
+.fourth img,
+.fifth img {
+    /* max-width: 350px; */
+    height: 200px;
+    border-radius: 20px;
+    
+}
+.fifth  .container .box {
+    background-color: #cfd1d2;
+    box-shadow: 0px 2px 6px #000000c5;
+}
+/* m */
+#m {
+    background: url('../images/market.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#m .box {
+    background-color: #ffffffca;
+}
+.marketing {
+    text-align: center;
+}
+.marketing .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.marketing .marketing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.marketing .marketing-container a  {
+    box-shadow: 0px 2px 6px #00000053;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-weight: 700;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.marketing .marketing-container a:hover {
+    background-color: #ff6600;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.In-Center .data {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.In-Center .data p {
+    max-width: 650px;
+}
+.In-Center .data ul li,
+.store ul li,
+.around ul li,
+.outdoor ul li {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.In-Center img,
+.store img,
+.around img,
+.outdoor img {
+    border-radius: 20px;
+}
+/* 
+bascis */
+.odd {
+    background-color: #cfd1d2;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.left {
+    width: 100%;
+}
+
+.right {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #021248;
+    margin-bottom: 50px;
+}
+h2 span {
+    color: #ff6700;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .myContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left {
+        width: 60%;
+    }
+
+    .right {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+.collected-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.images-container img {
+    max-width: 20%; 
+    height: 300px;
+    transform: skewX(-10deg); 
+}
+.collected-container .info {
+    text-align: center;
+}
+#ref {
+    font-size: 52px;
+    color: #ff6600;
+    margin-top: 50px;
+}
+@media (max-width: 768px) {
+    .images-container img {
+        max-width: 45%; 
+    }
+}
+@media (max-width: 480px) {
+    .images-container img {
+        max-width: 100%;
+    }
+}
+.last p {
+    margin-bottom: 20px;
+}

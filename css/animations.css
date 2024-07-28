@@ -1,0 +1,38 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+.slide-up {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.bounce-in {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.bounce-out {
+    opacity: 0;
+    transform: scale(-0.5);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.scale-in {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate {
+    opacity: 1;
+    transform: none !important;
+}
+
+
+
